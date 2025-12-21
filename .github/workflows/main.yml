@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  CSV_URL: "data_preprocessing.csv"
+  CSV_URL: "../membangun_model/data_preprocessing.csv"
   TARGET_VAR: "Churn"
 
 jobs:
