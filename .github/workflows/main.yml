@@ -36,4 +36,4 @@ jobs:
       - name: Run modelling
         run: |
           cd membangun_model
-          python modelling.py
+          py modelling.py
