@@ -1,0 +1,39 @@
+name: SMSML_M-Daffa-Yunus
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  CSV_URL: "../membangun_model/data_preprocessing.csv"
+  TARGET_VAR: "Churn"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.7"
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r membangun_model/requirements.txt
+
+      - name: Run modelling
+        run: |
+          cd membangun_model
+          python modelling.py
