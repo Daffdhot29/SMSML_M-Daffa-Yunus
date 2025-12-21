@@ -1,0 +1,12 @@
+- Nama Dataset:  
+Telco Customer Dataset
+
+- Sumber Dataset:
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+- Deskripsi Singkat:
+Dataset ini berisi data pelanggan yang digunakan untuk menganalisis dan memprediksi *customer churn* (pelanggan yang berhenti berlangganan).  
+Dataset terdiri dari fitur numerik dan kategorikal, seperti lama berlangganan (*tenure*), jenis layanan yang digunakan, metode pembayaran, serta biaya bulanan dan total.  
+Target utama pada dataset ini adalah variabel Churn, yang menunjukkan apakah pelanggan berhenti berlangganan Iya/Yes atau tidak/No.  
+
+Dataset biasa untuk permasalahan klasifikasi biner dan sangat cocok untuk eksperimen model machine learning seperti RandomForestClassifier.

@@ -1,0 +1,10 @@
+# MLflow
+mlflow.db
+mlruns/
+
+# Docker artifacts
+modelling_docker/
+
+# Python
+__pycache__/
+*.pyc

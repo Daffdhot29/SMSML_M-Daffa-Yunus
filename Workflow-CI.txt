@@ -1,0 +1,17 @@
+Workflow CI ini menggunakan GitHub Actions untuk mengotomatisasi proses training model machine learning dan logging menggunakan MLflow setiap kali terjadi push atau pull request ke branch main.
+
+Workflow melakukan:
+
+Checkout repository untuk mengambil source code.
+
+Setup environment Python 3.10.
+
+Install dependency yang dibutuhkan (MLflow, scikit-learn, pandas, numpy).
+
+Menjalankan proses modelling melalui file modelling.py yang berisi training dan logging model ke MLflow.
+
+Validasi MLflow run untuk memastikan proses training berhasil dijalankan.
+
+Workflow ini membantu menjaga konsistensi proses eksperimen machine learning secara otomatis.
+
+link : https://github.com/Daffdhot29/SMSML_M-Daffa-Yunus/tree/main/.github/workflows/
